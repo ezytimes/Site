@@ -1,6 +1,5 @@
 .logo-blend-small {
     width: 120px;
-    /* Adjust as needed */
     mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
     -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
     transition: all 0.3s ease-in-out;
@@ -9,8 +8,11 @@
 
 .logo-blend-mid {
     width: 120px;
-    /* Adjust as needed */
-    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
-    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
+    mask-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%),
+        linear-gradient(to left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%),
+        linear-gradient(to left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
     transition: all 0.3s ease-in-out;
 }
