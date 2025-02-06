@@ -1,15 +1,16 @@
 .logo-blend-small {
     width: 120px;
-    /* Adjust size as needed */
-    mask-image: radial-gradient(square, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: radial-gradient(square, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    /* Adjust as needed */
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
     transition: all 0.3s ease-in-out;
 }
 
+
 .logo-blend-mid {
-    width: 400px;
-    /* Adjust size as needed */
-    mask-image: radial-gradient(square, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: radial-gradient(square, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    width: 120px;
+    /* Adjust as needed */
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
     transition: all 0.3s ease-in-out;
 }
