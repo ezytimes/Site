@@ -1,3 +1,20 @@
+/* Brutalist Font Styling */
+body {
+    font-family: 'JetBrains Mono', sans-serif;
+    /* Change 'Inter' to your preferred font */
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Make headings bolder & sharper */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .logo-blend-small {
     width: 180px;
     mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 90%);
@@ -15,32 +32,36 @@
 
 .logo-circular {
     width: 250px;
-  border-radius: 100%;
-  mask-image: radial-gradient(circle, white 55%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle, white 55%, transparent 100%);
-  box-shadow: 0 0 15px rgba(44, 79, 184, 0.9);
+    border-radius: 100%;
+    mask-image: radial-gradient(circle, white 55%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle, white 55%, transparent 100%);
+    box-shadow: 0 0 15px rgba(44, 79, 184, 0.9);
 }
 
 .navbar {
-    font-family: 'Rajdhani';
-    background-color: black !important; /* Ensure background stays black */
-    padding: 0.01px 0 !important; /* Reduce top and bottom padding to make it thinner */
+    font-family: 'JetBrains Mono', sans-serif;
+    background-color: black !important;
+    /* Ensure background stays black */
+    padding: 0.01px 0 !important;
+    /* Reduce top and bottom padding to make it thinner */
 }
 
 .navbar .nav-link {
-    color: #007bff !important; /* Bootstrap Primary Blue */
-    font-size: 1.2rem !important; /* Increase text size */
+    color: #007bff !important;
+    /* Bootstrap Primary Blue */
+    font-size: 1.2rem !important;
+    /* Increase text size */
     font-weight: 550;
-    text-transform: uppercase; /* Optional: Adds a sleek, all-caps look */
-    letter-spacing: 2px; /* Subtle spacing for readability */
+    text-transform: uppercase;
+    /* Optional: Adds a sleek, all-caps look */
+    letter-spacing: 2px;
+    /* Subtle spacing for readability */
     word-spacing: 10px;
 }
 
 .navbar .nav-link:hover {
-    color: #0056b3 !important; /* Darker blue on hover */
+    color: #0056b3 !important;
+    /* Darker blue on hover */
 }
 
 /*------------- font-family:  'Inter', 'Poppins', 'Rajdhani', sans-serif;----------------------------------------------------------*/
-
-
-
