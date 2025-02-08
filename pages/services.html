@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easytimes - Systems Engineering Services</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
 </head>
@@ -13,7 +13,25 @@
 <body>
 
     <!-- Navbar -->
-    <div id="navbar"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.JPG" alt="Easytimes Logo" class="mb-3 logo-blend-small"> <!-- Logo -->
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-primary" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="../pages/services.html">Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Services Section -->
     <section class="container my-5">
@@ -22,8 +40,11 @@
             <div class="col-md-6 text-center text-md-start">
                 <img src="assets/images/automation.png" alt="Automation" width="100">
                 <h3 class="fw-bold mt-3">Automation Solutions</h3>
-                <p class="text-muted">We streamline engineering tasks with custom-built automation tools, reducing
-                    manual effort and improving efficiency.</p>
+
+                <p>We streamline time-consuming processes with custom-built automation tools.</p>
+                <p>Specialized in Point-of-Sale platforms such as, but not limited to, LightSpeed and Shopify.</p>
+                <p>Whether it is payroll, inventory, logistics, autonomous customer support, website integrations...
+                    we have you covered.</p>
             </div>
             <div class="col-md-6">
                 <img src="assets/images/automation-diagram.png" alt="Automation Process"
@@ -36,8 +57,13 @@
             <div class="col-md-6 text-center text-md-start">
                 <img src="assets/images/software.png" alt="Software Development" width="100">
                 <h3 class="fw-bold mt-3">Custom Software</h3>
-                <p class="text-muted">Tailored software solutions designed to fit your business requirements, ensuring
+
+                <p>Tailored software solutions designed to fit your business requirements, ensuring
                     seamless integration and maximum productivity.</p>
+                <p>Our team of experienced developers will work with you to create a custom software
+                    solution that meets your unique needs.</p>
+                <p>From web applications to mobile apps, we have the expertise to deliver high-quality
+                    software that will help you achieve your business goals.</p>
             </div>
             <div class="col-md-6">
                 <img src="assets/images/software-demo.png" alt="Software UI" class="img-fluid rounded shadow">
@@ -48,9 +74,21 @@
         <div class="row align-items-center py-5">
             <div class="col-md-6 text-center text-md-start">
                 <img src="assets/images/consulting.png" alt="Consulting" width="100">
-                <h3 class="fw-bold mt-3">Engineering Consulting</h3>
-                <p class="text-muted">Expert advice to optimize workflows, improve efficiency, and implement the best
+                <h3 class="fw-bold mt-3">Engineering Design</h3>
+                <p>Expert advice to optimize workflows, improve efficiency, and implement the best
                     industry practices.</p>
+                <p>Our engineering software services cover a wide range of engineering disciplines
+                    including
+                    civil, mechanical, electrical, and environmental engineering.
+                </p>
+                <p>With our in-house tools we provide streamlined design solutions while adhering to
+                    the most stringent project requirements, industry standards, and building code regulations.
+                </p>
+                <p>
+                    <a class="nav-link text-primary" href="../pages/contact.html">Book a free consult</a>with our team
+                    to discuss your project requirements and explore potential
+                    solutions.
+                </p>
             </div>
             <div class="col-md-6">
                 <img src="assets/images/consulting-session.png" alt="Consulting Session"
@@ -60,11 +98,11 @@
     </section>
 
 
-    <!-- Footer -->
-    <div id="footer"></div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Easytimes. All Rights Reserved.</p>
+    </footer>
 
-    <!-- Include JavaScript for Navbar & Footer -->
-    <script src="/assets/js/include.js"></script>
+
 
 </body>
 

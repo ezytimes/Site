@@ -1,12 +1,10 @@
 /* Brutalist Font Styling */
 body {
     font-family: 'Inter', sans-serif;
-    /* Change 'Inter' to your preferred font */
     font-weight: 400;
     letter-spacing: 0.5px;
 }
 
-/* Make headings bolder & sharper */
 h1,
 h2,
 h3 {
@@ -40,21 +38,16 @@ h3 {
 .navbar {
     font-family: 'Inter', sans-serif;
     background-color: black !important;
-    /* Ensure background stays black */
     padding: 0.01px 0 !important;
-    /* Reduce top and bottom padding to make it thinner */
 }
 
 .navbar .nav-link {
     color: #007bff !important;
     /* Bootstrap Primary Blue */
     font-size: 1.2rem !important;
-    /* Increase text size */
     font-weight: 550;
     text-transform: uppercase;
-    /* Optional: Adds a sleek, all-caps look */
     letter-spacing: 2px;
-    /* Subtle spacing for readability */
     word-spacing: 10px;
 }
 
@@ -62,5 +55,13 @@ h3 {
     color: #0056b3 !important;
     /* Darker blue on hover */
 }
+
+.custom-width {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*------------- font-family:  'Inter', 'Poppins', 'Rajdhani', sans-serif;----------------------------------------------------------*/

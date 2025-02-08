@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easytimes - Systems Engineering Services</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
 </head>
@@ -13,24 +13,65 @@
 <body>
 
     <!-- Navbar -->
-    <div id="navbar"></div>
-
-    <!-- Hero Section -->
-    <header class="bg-primary text-white text-center py-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
         <div class="container">
-            <img src="assets/images/logo.JPG" alt="Easytimes Logo" class="logo-circular">
-            <h1 class="fw-bold">Simplifying Automation for Civil Engineering Design</h1>
-            <p class="lead">Professional systems engineering solutions to optimize your workflows.</p>
-            <a href="pages/services.html" class="btn btn-light btn-lg mt-3">Explore Our Services</a>
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.JPG" alt="Easytimes Logo" class="mb-3 logo-blend-small"> <!-- Logo -->
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-primary" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="../pages/services.html">Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
 
-    <!-- Footer -->
-    <div id="footer"></div>
 
-    <!-- Include JavaScript for Navbar & Footer -->
-    <script src="/assets/js/include.js"></script>
+
+    <!-- Contact Section -->
+    <section class="container my-5">
+        <div class="row align-items-center justify-content-center py-5">
+            <div class="col-md-8 text-center">
+                <h2 class="fw-bold">Contact Us</h2>
+                <p>We’d love to hear from you. Let’s discuss how we can simplify your processes
+                    through automation solutions, custom software, and more.</p>
+
+                <!-- Contact Form -->
+                <form action="#" method="POST" class="mt-4">
+                    <div class="mb-3">
+                        <label for="name" class="form-label"></label>
+                        <input type="text" class="form-control custom-width" id="name" placeholder="Enter your name"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control custom-width" id="email" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label"></label>
+                        <textarea class="form-control custom-width " id="message" rows="6" placeholder="Your message"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Easytimes. All Rights Reserved.</p>
+    </footer>
+    <script src="path/to/formValidation.js"></script>
+
 
 </body>
 
