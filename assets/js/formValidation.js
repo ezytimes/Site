@@ -1,31 +1,48 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
 
-function validateForm() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();  // Prevent default form submission
 
-    // name contains only alphabets and spaces including ñÑ
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!validateForm(name, email, message)) {
+            alert("Please enter valid details.");
+            return;
+        }
+
+        // Prepare form data
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("message", message);
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                alert("Thank you! We will contact you soon.");
+                form.reset(); // Clear input fields
+            } else {
+                alert("Sorry, an unexpected error occurred. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Sorry, an unexpected error occurred. Please try again later.");
+        }
+    });
+});
+
+function validateForm(name, email, message) {
     const namePattern = /^[A-Za-zñÑ\s]+$/;
-    if (!namePattern.test(name)) {
-        alert("Please enter a valid name.");
-        return false;
-    }
-
-    // email validation
     const emailPattern = /^[a-zA-Z0-9ñÑ._%+-]+@[a-zA-Z0-9ñÑ.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailPattern.test(email)) {
-        alert("Please enter a valid email.");
-        return false;
-    }
 
-    if (message.length > 1000) {
-        alert("Your message is too long! Please shorten it.");
-        return false;
-    }
-
-    return true;
-}
-
-function sanitizeInput(input) {
-    return input.replace(/[<>]/g, '');
+    return namePattern.test(name) && emailPattern.test(email) && message.length <= 1000;
 }
