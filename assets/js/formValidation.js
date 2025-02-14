@@ -25,11 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 body: formData,
             });
 
-            const result = await response.json();
+            const result = await response.text(); // Change to text() to see raw response
+            console.log("Raw Response:", result);
 
-            if (result.success) {
+            const jsonResponse = JSON.parse(result);
+            if (jsonResponse.success) {
                 alert("Thank you! We will contact you soon.");
-                form.reset(); // Clear input fields
+                form.reset();
             } else {
                 alert("Sorry, an unexpected error occurred. Please try again later.");
             }
